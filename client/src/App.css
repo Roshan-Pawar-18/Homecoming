@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated grid background used on landing page */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(26,107,74,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,107,74,0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.glow-orb {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
