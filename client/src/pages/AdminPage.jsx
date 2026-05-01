@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-// import * as api from "../api/index"
+import * as api from "../api/index"
 import Sidebar from "../components/Sidebar"
 
 const TABS = ["complaints", "users", "requests"]
